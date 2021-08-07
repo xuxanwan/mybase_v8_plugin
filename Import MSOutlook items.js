@@ -194,7 +194,7 @@ var _trim_cr=function(s){return (s||'').replace(/\r+$/g, '');};
 										for(var i=0; i<nFiles; ++i){
 
 											var xFile=xFiles.getItem(i+1);
-											var sLeaf=xFile ? xFile.getLeafName() : '';
+											var sLeaf=xFile ? xFile.getFileName() : '';
 
 											//2013.11.12 embedded images may always return the 'Outlook.bmp' tag;
 											if(!sLeaf || sLeaf==='Outlook.bmp'){
